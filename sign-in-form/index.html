@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-in Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Sign In</h3>
+      <form>
+        <section>
+          <label for="email">Email</label>
+          <input
+            placeholder="Enter your Email"
+            id="email"
+            type="email"
+            autofocus
+            required
+            name="email"
+            autocomplete="email"
+          />
+        </section>
+
+        <section>
+          <label for="password">Password</label>
+          <div class="passord-wrap">
+            <input
+              placeholder="Enter your Password"
+              id="password"
+              type="password"
+              required
+              name="current-password"
+              autocomplete="current-password"
+              aria-describedby="password-constraint"
+            />
+            <!-- <div id="password-constraint">
+              8+ characters with mix of letters, numbers, symbols
+            </div> -->
+            <button id="toggle-password-visibility">
+              <i class="fa-solid fa-eye open"></i>
+              <i class="fa-solid fa-eye-slash close"></i>
+            </button>
+          </div>
+        </section>
+
+        <button type="submit">Sign-in</button>
+      </form>
+    </div>
+  </body>
+</html>
